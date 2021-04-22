@@ -7,7 +7,7 @@ import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 
 const routes = {
-    '/spa-node': Home,
+    '/index': Home,
     '/:id': Character,
 }
 
