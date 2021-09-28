@@ -8,7 +8,6 @@ import resolveRoutes from '../utils/resolveRoutes';
 
 const routes = {
     '/': Home,
-    '/index': Home,
     '/:id': Character,
 }
 
