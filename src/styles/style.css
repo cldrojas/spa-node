@@ -21,17 +21,23 @@ body {
 .Main {
     padding: 10px;
     grid-template-columns: minmax(auto, 976px);
-    display: grid;
+    display: grid;    
     justify-content: center;
 }
 
 .Characters {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1.5rem;
     grid-row-gap: 1.5em;
-    display: grid;
+    display: grid;    
+    width: 100%;
+    
 }
-
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Characters-inner {
     grid-template-columns: 1fr 2fr;
     grid-gap: 1.5rem;
@@ -72,15 +78,17 @@ body {
     text-decoration: none;
     box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
     border-radius: 5px;
-    margin: 0 0 20px 0;
-    display: block;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     animation-duration: 2s;
     animation-name: fade;
+    border: solid 1px red;
 }
 
-.Characters-item img {
-    width: 100%;
-    height: auto;
+.Characters-item img {    
+    width: 100%;    
     border-radius: 5px 5px 0 0;
 }
 
